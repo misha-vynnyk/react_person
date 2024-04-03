@@ -1,9 +1,12 @@
 import "./Person.scss";
-/* eslint-disable no-nested-ternary */
 
-export const Person = ({
-  person: { name, age, isMarried, partnerName, sex },
-}) => {
+export const Person = ({ person: {
+  name,
+  age,
+  isMarried,
+  partnerName,
+  sex
+},}) => {
   const partnerDescription = !isMarried
     ? "I am not married"
     : `${partnerName} is my ${sex === "m" ? "wife" : "husband"}`;
